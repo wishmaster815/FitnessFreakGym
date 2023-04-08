@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessFreak GYM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            /* CSS RESET */
+            margin: 0px;
+            pad: 0px;
+            background: url('pictures/body.jpg');
+            background-size: cover;
+            color: white;    
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        /* Left Header styling */
+        .left{
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 0px;
+        }
+        .left img{
+            width: 80px;
+        }
+
+        .left div{
+            text-align: center;
+        }
+
+        /* Middle Header styling */
+        .mid{
+            /* border: 2px solid rgb(12, 254, 117); */
+            display:block;
+            width: 36%;
+            margin: auto;
+            
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+        }
+        .navbar li a:hover, .navbar li a:active{
+            color:grey;
+            text-decoration: underline;
+        }
+        
+        /* Right header styling */
+        .right{
+            /* border: 2px solid rgb(0, 166, 255); */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 0px;
+
+        }
+        .btn{
+            color: white;
+            background-color: black;
+            border: 2px solid grey;
+            border-radius: 10px;
+            margin: 10px 0px;
+            padding: 8px 19px;
+            cursor: pointer;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .btn:hover{
+            color: rgb(136, 139, 139);
+        }
+        
+        .container{
+            border: 2px solid white;
+            margin: 67px 37px;
+            padding: 48px;
+            width: 28%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+            display: block;
+            width: 337px;
+            padding: 3px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 95%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- LEft box for logo -->
+        <div class="left">
+            <img src="pictures/png-clipart-bodybuilding-graphics-fitness-centre-logo-bodybuilding-physical-fitness-logo-removebg-preview.png" alt="">
+            <div>
+                FitnessFreak
+            </div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons/ user logos -->
+        <div class="right">
+            <button class="btn">Signup</button>
+            <button class="btn">Login</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2> Join Asia's Best Gym Now!</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter your Email ID">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Mobile Number">
+            </div>
+            <button class="btn">Submit Now</button>
+
+        </form>
+    </div>
+</body>
+</html>
